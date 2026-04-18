@@ -375,3 +375,15 @@ with st.expander("📊 View Model Insights"):
                 'Importance': [0.45, 0.25, 0.15, 0.10, 0.05]
             }).sort_values(by='Importance', ascending=True)
             st.bar_chart(static_importance.set_index('Feature'), horizontal=True)
+
+# --- Footer ---
+st.markdown("<br><br>", unsafe_allow_html=True)
+st.markdown(
+    '''
+    <div style="text-align: center; color: #a1a1aa; padding-top: 30px; border-top: 1px solid #333;">
+        <strong>Made BY Saurabh Kumar Jha , Shashwat Saini & Vikash Yadav</strong><br>
+        <span style="font-size: 0.9em; opacity: 0.8;">From Btech CSE - 2nd Year For PBL Project</span>
+    </div>
+    ''',
+    unsafe_allow_html=True
+)
